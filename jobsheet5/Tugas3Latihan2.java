@@ -8,18 +8,18 @@ public class Tugas3Latihan2 {
         Scanner sc = new Scanner (System.in);
 
         System.out.println("--- SISTEM AKSES WIFI KAMPUS ---");
-        System.out.print("Masukkan jenis pengguna (Mahasiswa/Dosen/Lainnya): ");
+        System.out.print("Masukkan jenis pengguna (Mahasiswa/Dosen): ");
         String jenisPengguna = sc.nextLine();
 
         if (jenisPengguna.equalsIgnoreCase ("Dosen")){
-            System.out.println("Akses WiFi diberikan");
+            System.out.println("Akses WiFi diberikan (dosen)");
         } else if (jenisPengguna.equalsIgnoreCase ("Mahasiswa")){
             System.out.print("Masukkan jumlah SKS yang diambil: ");
             int jumlahSKS = sc.nextInt();
             if (jumlahSKS >= 12){
-                System.out.println("Akses WiFi diberikan");
+                System.out.println("Akses WiFi diberikan (mahasiswa aktif)");
             } else {
-                System.out.println("Akses WiFi ditolak");
+                System.out.println("Akses ditolak, SKS kurang dari 12");
             }
                 
         } else {
