@@ -13,7 +13,7 @@ public class Tugas3Latihan1 {
         System.out.print("Apakah Anda sudah melakukan registrasi online? (TRUE/FALSE): ");
         boolean registrasiOnline = sc.nextBoolean();
 
-        if (kartuMahasiswa && registrasiOnline){
+        if (kartuMahasiswa || registrasiOnline){
             System.out.println("Anda diizinkan masuk perpustakaan");
         } else {
             System.out.println("Anda tidak diizinkan masuk perpustakaan");
