@@ -86,7 +86,12 @@ public class CM1_13 {
         double rataRata = (nilaiAkhir1 + nilaiAkhir2) / 2;
         System.out.println("\n\nRata-rata Nilai Akhir: " + rataRata);
         //Status kelulusan keseluruhan
-        String statusKelulusan = (rataRata >= 60) ? "Lulus" : "Tidak Lulus";
+        String statusKelulusan;
+        if (status1.equals("Lulus") && status2.equals("Lulus") && rataRata >= 70) {
+            statusKelulusan = "Lulus";
+        } else {
+            statusKelulusan = "Tidak Lulus";
+        }
         System.out.println("Status Semester: " + statusKelulusan);
         sc.close();
     }
